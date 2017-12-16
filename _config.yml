@@ -7,6 +7,3 @@ twitter_username: pghdsa
 github_username:  pghdsa-socfem
 
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
