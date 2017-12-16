@@ -1,4 +1,12 @@
-task default: :build
+begin
+  require 'rubocop/rake_task'
+rescue LoadError => e
+  warn e
+end
+
+task default: %i[rubocop build]
+
+RuboCop::RakeTask.new
 
 desc 'build the thing'
 task :build do
