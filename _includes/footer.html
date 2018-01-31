@@ -1,13 +1,14 @@
 {% if site.theme_settings.footer_text %}
 <footer class="site-footer">
-    <p class="text">{{ site.theme_settings.footer_text }}</p>
-            <div class="footer-icons">
-                <ul>
-                <!-- Social icons from Font Awesome, if enabled -->
-                {% include icons.html %}
-                </ul>
-            </div>
+  <p class="text">
+    Copyright &copy; 2018 Pittsburgh DSA.
+    Built with <a href="https://www.jekyllrb.com/">Jekyll</a> and
+    <a href="https://github.com/Sylhare/Type-on-Strap">the Type-on-Strap theme</a>.
+  </p>
+  <div class="footer-icons">
+    <ul>
+      {% include icons.html %}
+    </ul>
+  </div>
 </footer>
 {% endif %}
-
-

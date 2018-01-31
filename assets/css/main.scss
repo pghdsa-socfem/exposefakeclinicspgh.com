@@ -2,3 +2,15 @@
 ---
 
 @import "type-on-strap";
+
+a.permalink {
+  color: $background-color;
+
+  &:hover, &:active {
+    color: $link-color;
+  }
+};
+
+div.clinic {
+  padding-bottom: 1em;
+};

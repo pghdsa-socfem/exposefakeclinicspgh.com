@@ -1,3 +1,39 @@
 ---
-layout: home
 ---
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    <div class="content">
+      <div class="home">
+        <div id="main" class="call-out">
+          <img src="assets/img/main-call-out.jpg" alt="(big background image here)">
+        </div>
+
+        <article>
+
+          {% include intro.html %}
+
+            {% include identification.html %}
+
+            {% include whysocfem.html %}
+
+            {% include pghcpcs.html %}
+
+            {% include gethelp.html %}
+
+            {% include action.html %}
+
+            {% include resources.html %}
+
+        </article>
+
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+</html>
