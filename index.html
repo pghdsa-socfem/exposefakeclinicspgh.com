@@ -6,38 +6,30 @@
   {% include head.html %}
 
   <body>
-    <div class="content">
-      <div class="home">
-        <!-- TODO: fix nav styling -->
-        <nav style="display:none">
-          <a href="#identification">How to Identify a CPC</a> |
-          <a href="#whysocfem">Why Are Socialist Feminists Taking Action Against CPCs?</a> |
-          <a href="#pghcpcs">CPCs in the Pittsburgh Area</a> |
-          <a href="#gethelp">Get Help</a> |
-          <a href="#action">Take Action</a> |
-          <a href="#resources">External Resources</a>
-        </nav>
+    {% include navbar.html %}
 
-        <article>
+		<div class="content">
+			<div class="home">
+				<article>
 
-          {% include intro.html %}
+					{% include intro.html %}
 
-            {% include identification.html %}
+						{% include identification.html %}
 
-            {% include gethelp.html %}
+						{% include gethelp.html %}
 
-            {% include action.html %}
+						{% include action.html %}
 
-            {% include whysocfem.html %}
+						{% include whysocfem.html %}
 
-            {% include pghcpcs.html %}
+						{% include pghcpcs.html %}
 
-            {% include resources.html %}
+						{% include resources.html %}
 
-        </article>
+				</article>
 
-      </div>
-    </div>
+			</div>
+		</div>
 
     {% include footer.html %}
 

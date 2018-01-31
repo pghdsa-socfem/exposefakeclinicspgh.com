@@ -1,38 +1,39 @@
-baseurl: ""
-url: "http://www.exposefakeclinicspgh.com"
+baseurl: ''
+url: 'http://www.exposefakeclinicspgh.com'
 
 theme_settings:
-  title: Expose Fake Clinics PGH
+  title: '#ExposeFakeClinics'
   favicon: assets/favicon.png
-  description: "A project by the Pittsburgh DSA to expose and protest fake abortion clinics."
+  avatar: assets/img/rose-40.png
+  description: 'A project by the Pittsburgh DSA to expose and protest fake abortion clinics.'
 
   rss: false
-  email_address: "exposefakeclinicspgh@pghdsa.org"
+  email_address: 'exposefakeclinicspgh@pghdsa.org'
   facebook: # TODO: check to see if there is a Facebook page for this campaign, if not, add PGHDSA's facebook page
-  twitter: "pghdsa"
+  twitter: 'pghdsa'
 
-  google_analytics: GTM-MTPWTKB
+  google_analytics: '' # TODO
   portfolio: false
   search: false
   tags: false
 
-  str_follow_on: "Follow on"
-  str_rss_follow: "Follow RSS feed"
-  str_email: "Email"
-  str_next_post: "Next post"
-  str_previous_post: "Previous post"
-  str_next_page: "Next"
-  str_previous_page: "Prev"
-  str_continue_reading: "Continue reading"
-  str_javascript_required_disqus: "Please enable JavaScript to view comments."
+  str_follow_on: 'Follow on'
+  str_rss_follow: 'Follow RSS feed'
+  str_email: 'Email'
+  str_next_post: 'Next post'
+  str_previous_post: 'Previous post'
+  str_next_page: 'Next'
+  str_previous_page: 'Prev'
+  str_continue_reading: 'Continue reading'
+  str_javascript_required_disqus: 'Please enable JavaScript to view comments.'
 
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+  google_fonts: 'Source+Sans+Pro:400,700,700italic,400italic'
 
   post_navigation: true
 
 # PAGINATION
 paginate: 5
-paginate_path: "blog/page:num"
+paginate_path: 'blog/page:num'
 
 markdown: kramdown
 highlighter: rouge

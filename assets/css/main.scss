@@ -3,10 +3,17 @@
 
 @import "type-on-strap";
 
+$link-color: #F33731;
+$red: #FF0000;
+
 h1, h2, h3, h4 {
   &.centered {
     text-align: center;
   }
+}
+
+a {
+  color: $link-color;
 }
 
 section {
@@ -18,6 +25,26 @@ a.permalink {
 
   &:hover, &:active {
     color: $link-color;
+  }
+}
+
+.site-header {
+  background: $red;
+  color: $background-color;
+  padding: 1% 3%;
+
+  a {
+    color: $background-color;
+  }
+
+  nav {
+    a {
+      font-weight: bold;
+
+      &:hover, &:visited, &:active {
+        color: $background-color;
+      }
+    }
   }
 }
 
