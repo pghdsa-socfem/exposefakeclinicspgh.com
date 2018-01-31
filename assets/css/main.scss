@@ -3,14 +3,89 @@
 
 @import "type-on-strap";
 
+h1, h2, h3, h4 {
+  &.centered {
+    text-align: center;
+  }
+}
+
+section {
+  padding: 5%;
+}
+
 a.permalink {
   color: $text-color;
 
   &:hover, &:active {
     color: $link-color;
   }
-};
+}
 
 div.clinic {
   padding-bottom: 1em;
-};
+}
+
+h1.title {
+  margin-top: 0;
+  text-align: center;
+
+  span.muted {
+    text-shadow: none;
+    display: block;
+    font-size: 0.5em;
+    font-weight: normal;
+  }
+
+  span.amped {
+    color: $link-color;
+  }
+}
+
+img.title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+img.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+span.pop {
+  color: $link-color;
+}
+
+section#identification {
+  background: $link-color;
+  color: $background-color;
+
+  a.permalink {
+    color: $background-color;
+  }
+
+  span.pop {
+    color: $text-color;
+  }
+}
+
+div.clinic {
+  h4 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 2%;
+  }
+}
+
+p.gethelp-preamble {
+  font-size: 2em;
+  line-height: 1.2em;
+  font-weight: bold;
+  text-align: center;
+
+  span.pop {
+    color: $link-color;
+  }
+}
