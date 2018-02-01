@@ -33,6 +33,20 @@ a.permalink {
   color: $background-color;
   padding: 1% 3%;
 
+  .branding-container {
+    padding: 5px;
+    float: left;
+
+    .branding {
+      display: inline;
+      float: left;
+
+      .site-title {
+        padding: .2em .1em;
+      }
+    }
+  }
+
   a {
     color: $background-color;
   }
