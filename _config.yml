@@ -1,11 +1,14 @@
+title: Expose Fake Clinics PGH
+description: |
+  A project by the Pittsburgh DSA Socialist Feminist Committee to expose and
+  protest fake abortion clinics.
+
 baseurl: ''
 url: 'http://www.exposefakeclinicspgh.com'
 
 theme_settings:
-  title: '#ExposeFakeClinics'
   favicon: assets/favicon.png
   avatar: assets/img/rose-40.png
-  description: 'A project by the Pittsburgh DSA to expose and protest fake abortion clinics.'
 
   rss: false
   email_address: 'exposefakeclinicspgh@pghdsa.org'
