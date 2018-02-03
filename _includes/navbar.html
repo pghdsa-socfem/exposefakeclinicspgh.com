@@ -1,24 +1,16 @@
 <header class="site-header">
-    
-  <div class="branding-container">
-        
-    <div class="branding">
-      <a href="{{ site.baseurl }}/">
-        <img class="avatar" src="{{ site.baseurl }}/{{ site.theme_settings.avatar }}" alt=""/>
-      </a>
-
-      <h1 class="site-title">
-        <a href="{{ site.baseurl }}/">{{ site.theme_settings.title }}</a>
-      </h1>
-    </div>
+  <div class="attribution">
+    <img src="{{ site.baseurl }}/{{ site.theme_settings.avatar }}"
+         alt="rose" />
+    <em>{{ site.description }}</em>
   </div>
-    
+
   <nav class="navbar navbar-default navbar-fixed-top">
     <a id="pull" class="toggle" href="#">
       <i class="fa fa-bars fa-lg"></i>
     </a>
   
-    <ul>
+    <ul class="collapse">
       <li>
         <a class="clear" href="#identification">Identifying CPCs</a>
       </li>
