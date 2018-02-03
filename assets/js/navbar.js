@@ -1,31 +1,24 @@
-/*
- * Display the menu items on smaller screens
- */
 $(function () {
-    var pull = $('#pull');
-    menu = $('nav ul');
-    menuHeight = menu.height();
+  var $pull = $('#pull'),
+      $menu = $('nav ul');
 
-    $(pull).on('click', function (e) {
-        menu.slideToggle();
-    });
-});
+  $pull.on('click', function (e) {
+    $menu.slideToggle();
+    $menu.addClass('expand');
+    $menu.removeClass('collapse');
+  });
 
-/*
- * Display the navbar back to normal after resize
- */
-$(window).resize(function () {
+  $(window).resize(function () {
     var w = $(window).width();
-    if (w > 320 && menu.is(':hidden')) {
-        menu.removeAttr('style');
+    if (w > 320 && $menu.is(':hidden')) {
+      $menu.removeAttr('style');
+      $menu.addClass('collapse');
+      $menu.removeClass('expand');
     }
-});
+  });
 
-
-/*
- * Make the header images move on scroll
- */
-$(window).scroll(function () {
+  $(window).scroll(function () {
     var x = $(this).scrollTop();   
     $('#main').css('background-position', '100% ' + parseInt(-x/3) + 'px' + ', 0%, center top');
+  });
 });

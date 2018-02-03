@@ -1,7 +1,7 @@
 title: Expose Fake Clinics PGH
 description: |
-  A project by the Pittsburgh DSA Socialist Feminist Committee to expose and
-  protest fake abortion clinics.
+  A project by the Pittsburgh DSA Socialist Feminist Committee
+email: socfem@pghdsa.org
 
 baseurl: ''
 url: 'http://www.exposefakeclinicspgh.com'
@@ -30,13 +30,9 @@ theme_settings:
   str_continue_reading: 'Continue reading'
   str_javascript_required_disqus: 'Please enable JavaScript to view comments.'
 
-  google_fonts: 'Source+Sans+Pro:400,700,700italic,400italic'
+  google_fonts: 'Lato:400,400i,700,700i'
 
   post_navigation: true
-
-# PAGINATION
-paginate: 5
-paginate_path: 'blog/page:num'
 
 markdown: kramdown
 highlighter: rouge
@@ -44,7 +40,6 @@ sass:
   sass_dir: _sass
   style: :compressed
 plugins:
-- jekyll-paginate
 - jekyll-seo-tag
 exclude:
 - Gemfile
