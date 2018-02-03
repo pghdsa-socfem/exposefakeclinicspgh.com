@@ -164,6 +164,31 @@ section#resources {
   }
 }
 
+#intro-extended-toggle-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+#numbers h3, #deceptions h3 {
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  a {
+    display: block;
+    text-align: center;
+  }
+}
+
 div.clinic {
   h4 {
     font-size: 1.3em;
