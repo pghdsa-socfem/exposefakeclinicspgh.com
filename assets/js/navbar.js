@@ -15,7 +15,9 @@ $(function() {
         hrefOffsetTop = $($(e.target).attr('href')).offset().top,
         threeEm = fontSizePx * 3;
 
-    $menu.slideToggle('fast');
+    if ($('#pull').is(':visible')) {
+      $menu.slideToggle('fast');
+    }
     $('html, body').animate({ scrollTop: hrefOffsetTop - threeEm }, 500);
   });
 
