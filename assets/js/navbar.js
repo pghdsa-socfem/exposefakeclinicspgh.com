@@ -1,11 +1,24 @@
 $(function() {
-  var $pull = $('#pull'),
-      $menu = $('nav ul');
+  var $menu = $('nav ul');
 
-  $pull.click(function() {
-    $menu.slideToggle();
+  $('#pull').click(function(e) {
+    e.stopPropagation();
     $menu.addClass('expand');
     $menu.removeClass('collapse');
+    $menu.slideToggle('fast');
+  });
+
+  $('.navbar ul.internal-links a').click(function(e) {
+    var fontSizePx = parseFloat(
+          getComputedStyle($('.content').get(0).parentElement).fontSize
+        ),
+        hrefOffsetTop = $($(e.target).attr('href')).offset().top,
+        threeEm = fontSizePx * 3;
+
+    if ($('#pull').is(':visible')) {
+      $menu.slideToggle('fast');
+    }
+    $('html, body').animate({ scrollTop: hrefOffsetTop - threeEm }, 500);
   });
 
   $(window).resize(function() {

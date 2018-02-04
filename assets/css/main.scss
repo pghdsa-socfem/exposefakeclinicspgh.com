@@ -40,6 +40,7 @@ a.deeplink {
 .site-header {
   padding: 0;
   border-bottom: 1px solid rgba(black, 0.1);
+  position: fixed;
 
   nav {
     border-top: 2px solid $link-color;
@@ -88,6 +89,10 @@ a.deeplink {
       display: inline-block;
     }
   }
+}
+
+.content {
+  padding-top: 3em;
 }
 
 h1.title {
