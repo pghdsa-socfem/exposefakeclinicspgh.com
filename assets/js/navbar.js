@@ -10,14 +10,13 @@ $(function() {
 
   $('.navbar ul.internal-links a').click(function(e) {
     var fontSizePx = parseFloat(
-          getComputedStyle(e.target.parentElement).fontSize
+          getComputedStyle($('.content').get(0).parentElement).fontSize
         ),
-        hrefOffsetTop = $($(e.target).attr('href')).offset().top;
+        hrefOffsetTop = $($(e.target).attr('href')).offset().top,
+        threeEm = fontSizePx * 3;
 
     $menu.slideToggle('fast');
-    $('html, body').animate({
-      scrollTop: hrefOffsetTop - (fontSizePx * 6)
-    }, 500);
+    $('html, body').animate({ scrollTop: hrefOffsetTop - threeEm }, 500);
   });
 
   $(window).resize(function() {
