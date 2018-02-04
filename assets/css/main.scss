@@ -13,13 +13,17 @@ a {
   color: $link-color;
 }
 
-@media (max-width: 1000px) {
+article, .site-header, .site-footer {
+  max-width: $break * 1.25;
+}
+
+@media (max-width: $break) {
   article {
     padding: 2% 12.5%;
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: $sm-break) {
   article {
     padding: 5%;
   }
