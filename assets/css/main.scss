@@ -13,19 +13,34 @@ a {
   color: $link-color;
 }
 
-article, .site-header, .site-footer {
-  max-width: $break * 1.25;
+address {
+  font-style: normal;
+}
+
+article {
+  max-width: $break;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
 }
 
 @media (max-width: $break) {
   article {
-    padding: 2% 12.5%;
+    padding: 2% 5%;
+  }
+
+  section#identification, section#pghcpcs {
+    margin: 0 .5em;
   }
 }
 
 @media (min-width: $sm-break) {
   article {
     padding: 5%;
+  }
+
+  section#identification, section#pghcpcs {
+    margin: 0 2em;
   }
 }
 
@@ -42,9 +57,11 @@ a.deeplink {
 }
 
 .site-header {
-  padding: 0;
   border-bottom: 1px solid rgba(black, 0.1);
+  margin: 0;
+  padding: 0;
   position: fixed;
+  width: 100%;
 
   nav {
     border-top: 2px solid $link-color;
@@ -95,7 +112,16 @@ a.deeplink {
   }
 }
 
-.content {
+.site-footer {
+  max-width: $break;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  display: block;
+  padding: 0;
+}
+
+div.content {
   padding-top: 3em;
 }
 
@@ -147,14 +173,22 @@ section#identification, section#pghcpcs {
   }
 }
 
-.tips, .cpcs {
+.facts, .tips, .cpcs, .resources, .restrictions {
   list-style-type: none;
+}
 
+.tips, .cpcs {
   li {
     padding: 1em;
     font-weight: bold;
     border-top: 0.25em solid $danger-gray;
     margin: 0;
+  }
+}
+
+.facts, .resources, .restrictions {
+  li{
+    padding: .5em;
   }
 }
 
