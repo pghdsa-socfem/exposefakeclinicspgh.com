@@ -22,5 +22,11 @@ end
 
 desc 'proof the htmls'
 task htmlproofer: :build do
-  HTMLProofer.check_directory('./_site', assume_extension: true).run
+  HTMLProofer.check_directory(
+    './_site',
+    assume_extension: true,
+    allow_hash_href: true,
+    check_favicon: true,
+    check_html: true
+  ).run
 end

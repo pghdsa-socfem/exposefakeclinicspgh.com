@@ -14,12 +14,4 @@ $(function() {
     $introExtToggleExpand.show();
     $introExtToggleCollapse.hide();
   });
-
-  $('#numbers-toggle').click(function() {
-    $('#numbers ul.facts').slideToggle();
-  });
-
-  $('#tactics-toggle').click(function() {
-    $('#tactics ul.facts').slideToggle();
-  });
 });
