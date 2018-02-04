@@ -14,12 +14,4 @@ $(function() {
     $introExtToggleExpand.show();
     $introExtToggleCollapse.hide();
   });
-
-  $('#numbers-toggle').click(function() {
-    $('#numbers ul.facts').slideToggle();
-  });
-
-  $('#deceptions-toggle').click(function() {
-    $('#deceptions ul.facts').slideToggle();
-  });
 });
