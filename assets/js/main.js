@@ -19,7 +19,7 @@ $(function() {
     $('#numbers ul.facts').slideToggle();
   });
 
-  $('#deceptions-toggle').click(function() {
-    $('#deceptions ul.facts').slideToggle();
+  $('#tactics-toggle').click(function() {
+    $('#tactics ul.facts').slideToggle();
   });
 });

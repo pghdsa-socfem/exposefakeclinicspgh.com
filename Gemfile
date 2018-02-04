@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'github-pages-health-check'
+gem 'html-proofer'
 gem 'jekyll'
 gem 'jekyll-default-layout', group: :jekyll_plugins
 gem 'jekyll-seo-tag', group: :jekyll_plugins
