@@ -2,36 +2,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <!-- JQuery (used for bootstrap and jekyll search) -->
-  <script src="{{ site.baseurl }}/assets/js/jquery-3.2.1.min.js" ></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
 
   <script defer=true src="{{ site.baseurl }}/assets/js/main.js"></script>
   <script defer=true src="{{ site.baseurl }}/assets/js/navbar.js"></script>
 
-  <!-- Bootstrap-3.3.7 isolation CSS -->
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/bootstrap-iso.min.css">
 
-  <!-- Bootstrap JS -->
   <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
 
-  <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
-  <!--Favicon-->
   <link rel="shortcut icon" href="{{ site.baseurl }}/{{ site.theme_settings.favicon }}" type="image/x-icon">
 
-  <!-- Canonical -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/font-awesome.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
 
-  <!-- Google Fonts -->
   {% if site.theme_settings.google_fonts %}
   <link href="//fonts.googleapis.com/css?family={{ site.theme_settings.google_fonts }}" rel="stylesheet" type="text/css">
   {% endif %}
 
-  <!-- Google Analytics -->
   {% if site.theme_settings.google_analytics %}
   <script>
       (function(i, s, o, g, r, a, m) {
