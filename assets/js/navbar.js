@@ -1,31 +1,37 @@
-/*
- * Display the menu items on smaller screens
- */
-$(function () {
-    var pull = $('#pull');
-    menu = $('nav ul');
-    menuHeight = menu.height();
+$(function() {
+  var $menu = $('nav ul');
 
-    $(pull).on('click', function (e) {
-        menu.slideToggle();
-    });
-});
+  $('#pull').click(function(e) {
+    e.stopPropagation();
+    $menu.addClass('expand');
+    $menu.removeClass('collapse');
+    $menu.slideToggle('fast');
+  });
 
-/*
- * Display the navbar back to normal after resize
- */
-$(window).resize(function () {
-    var w = $(window).width();
-    if (w > 320 && menu.is(':hidden')) {
-        menu.removeAttr('style');
+  $('.navbar ul.internal-links a').click(function(e) {
+    var fontSizePx = parseFloat(
+          getComputedStyle($('.content').get(0).parentElement).fontSize
+        ),
+        hrefOffsetTop = $($(e.target).attr('href')).offset().top,
+        threeEm = fontSizePx * 3;
+
+    if ($('#pull').is(':visible')) {
+      $menu.slideToggle('fast');
     }
-});
+    $('html, body').animate({ scrollTop: hrefOffsetTop - threeEm }, 500);
+  });
 
+  $(window).resize(function() {
+    var w = $(window).width();
+    if (w > 320 && $menu.is(':hidden')) {
+      $menu.removeAttr('style');
+      $menu.addClass('collapse');
+      $menu.removeClass('expand');
+    }
+  });
 
-/*
- * Make the header images move on scroll
- */
-$(window).scroll(function () {
+  $(window).scroll(function() {
     var x = $(this).scrollTop();   
     $('#main').css('background-position', '100% ' + parseInt(-x/3) + 'px' + ', 0%, center top');
+  });
 });

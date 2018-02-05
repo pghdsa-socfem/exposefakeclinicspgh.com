@@ -1,41 +1,52 @@
         <section id="intro">
+          <img class="title" width="50%" src="assets/img/intersectionalism.png"
+               alt="intersectionalism">
+
           <h1 class="title">
             <span class="muted">What are</span>
-            <span class="amped">Crisis Pregnancy Center Clinics?</span>
+            <span class="amped">Crisis Pregnancy Centers?</span>
           </h1>
-
-          <img class="title" width="70%" src="assets/img/intersectionalism.png">
 
           <p>
             A Crisis Pregnancy Center (CPC), sometimes called a Pregnancy
             Resource Center, is a fake clinic that does <em>NOT</em> provide
             comprehensive reproductive health care — or much of any health care
-            at all. Instead, they are anti-abortion counseling centers with an
-            agenda. They use advertisements to trick pregnant people into making
-            an appointment, promising free ultrasounds or free pregnancy tests
-            with the goal of pressuring people to carry a pregnancy to term.
-            Generally they do not use the ultrasound as a diagnostic tool, but
-            as another means of shame and coercion.
+            at all.
           </p>
 
-          <p>
-            Their goal is to dissuade women from exercising their right to
-            choose. Many CPCs intentionally misinform and mislead women seeking
-            pregnancy-related information. Once inside, people are lied to,
-            shamed, and pressured about their reproductive health decisions,
-            often delaying and increasing the cost of their procedure or pushing
-            them past a deadline for legal abortion altogether. CPCs often look
-            like medical facilities, yet they do not practice medicine.
-          </p>
+          <div id="intro-extended-toggle-container">
+            <a class="button" id="intro-extended-toggle-expand">+ more</a>
+            <a class="button" id="intro-extended-toggle-collapse" style="display:none">- less</a>
+          </div>
 
-          <p>
-            These practices block women from making fully informed choices about
-            their reproductive health and may endanger women’s health by
-            delaying access to legitimate health-care services.
-          </p>
+          <div id="intro-extended" class="collapse" style="display:none">
+            <p>
+              They are anti-abortion counseling centers with an
+              agenda. They use advertisements to trick pregnant people into making
+              an appointment, promising free ultrasounds or free pregnancy tests
+              with the goal of pressuring people to carry a pregnancy to term.
+              Generally they do not use the ultrasound as a diagnostic tool, but
+              as another means of shame and coercion.
+            </p>
 
-            {% include numbers.html %}
+            <p>
+              Their goal is to dissuade individuals from exercising their right to
+              choose. Many CPCs intentionally misinform and mislead those seeking
+              pregnancy-related information. Once inside, people are lied to,
+              shamed, and pressured about their reproductive health decisions,
+              often delaying and increasing the cost of their procedure or pushing
+              them past a deadline for legal abortion altogether. CPCs often look
+              like medical facilities, yet they do not practice medicine.
+            </p>
 
-            {% include deceptions.html %}
+            <p>
+              These practices block any pregnant person from making fully
+              informed choices about their reproductive health and put them in
+              danger by delaying access to legitimate health-care services.
+            </p>
 
+              {% include numbers.html %}
+
+              {% include tactics.html %}
+          </div>
         </section>
