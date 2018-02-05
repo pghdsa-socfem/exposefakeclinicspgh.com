@@ -13,8 +13,9 @@ a {
   color: $link-color;
 }
 
-article, .site-header, .site-footer {
+.content {
   max-width: $break * 1.25;
+  margin: 0 auto;
 }
 
 @media (max-width: $break) {
