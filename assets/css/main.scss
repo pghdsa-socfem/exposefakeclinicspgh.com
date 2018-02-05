@@ -24,6 +24,11 @@ article {
   float: none;
 }
 
+.content {
+  max-width: $break * 1.25;
+  margin: 0 auto;
+}
+
 @media (max-width: $break) {
   article {
     padding: 2% 5%;
