@@ -5,7 +5,7 @@ description: |
 email: socfem@pghdsa.org
 
 baseurl: ''
-url: 'http://www.exposefakeclinicspgh.com'
+url: 'https://www.exposefakeclinicspgh.com'
 
 theme_settings:
   favicon: assets/favicon.png
