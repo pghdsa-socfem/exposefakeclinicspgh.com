@@ -1,0 +1,24 @@
+{
+  "short_name": "EFCPGH",
+  "name": "Expose Fake Clinics PGH",
+  "theme_color": "#ED1C24",
+  "display": "browser",
+  "icons": [
+    {
+      "src": "assets/img/rose-1x.webp",
+      "type": "image/webp",
+      "sizes": "48x48"
+    },
+    {
+      "src": "assets/img/rose-2x.webp",
+      "type": "image/webp",
+      "sizes": "96x96"
+    },
+    {
+      "src": "assets/img/rose-4x.webp",
+      "type": "image/webp",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen"
+}
