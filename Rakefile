@@ -27,6 +27,9 @@ task htmlproofer: :build do
     assume_extension: true,
     allow_hash_href: true,
     check_favicon: true,
-    check_html: true
+    check_html: true,
+    url_ignore: [
+      %r{^https?://.+exposefakeclinicspgh\.com.+}
+    ]
   ).run
 end
