@@ -8,8 +8,8 @@ baseurl: ''
 url: 'http://www.exposefakeclinicspgh.com'
 
 theme_settings:
-  favicon: assets/favicon.png
-  avatar: assets/img/rose-40.png
+  favicon: assets/favicon.webp
+  avatar: assets/img/rose-40.webp
 
   rss: false
   facebook: # TODO: check to see if there is a Facebook page for this campaign, if not, add PGHDSA's facebook page
