@@ -6,13 +6,24 @@ variable "github_ips" {
   default = ["192.30.252.153", "192.30.252.154"]
 }
 
+provider "cloudflare" {}
+
 provider "dnsimple" {}
 
-resource "dnsimple_record" "www_github_pages" {
-  domain = "${var.domain}"
-  name   = "www"
-  value  = "pghdsa-socfem.github.io"
-  type   = "CNAME"
+resource "cloudflare_record" "www_github_pages" {
+  domain  = "${var.domain}"
+  name    = "www"
+  value   = "pghdsa-socfem.github.io"
+  type    = "CNAME"
+  proxied = true
+}
+
+resource "cloudflare_record" "root_github_pages" {
+  domain  = "${var.domain}"
+  name    = "${var.domain}"
+  value   = "pghdsa-socfem.github.io"
+  type    = "CNAME"
+  proxied = true
 }
 
 resource "dnsimple_record" "root_github_a" {
@@ -21,6 +32,13 @@ resource "dnsimple_record" "root_github_a" {
   name   = ""
   value  = "${element(var.github_ips, count.index)}"
   type   = "A"
+}
+
+resource "dnsimple_record" "www_github_pages" {
+  domain = "${var.domain}"
+  name   = "www"
+  value  = "pghdsa-socfem.github.io"
+  type   = "CNAME"
 }
 
 resource "dnsimple_record" "root_redirect" {
