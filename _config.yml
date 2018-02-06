@@ -47,3 +47,6 @@ exclude:
 - LICENSE
 - README.md
 - vendor
+- dns
+- Rakefile
+- TODO

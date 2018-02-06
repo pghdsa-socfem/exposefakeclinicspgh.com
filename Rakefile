@@ -9,6 +9,12 @@ task default: %i[rubocop htmlproofer]
 
 RuboCop::RakeTask.new if defined?(RuboCop)
 
+desc 'clean it up'
+task :clean do
+  rm_rf '_site'
+  rm_rf '.sass-cache'
+end
+
 desc 'build the thing'
 task :build do
   sh 'bundle exec jekyll build'
