@@ -29,7 +29,7 @@ task htmlproofer: :build do
     check_favicon: true,
     check_html: true,
     url_ignore: [
-      %r{^https?://.+exposingfakeclinicspgh\.com.+}
+      %r{^https?://.+exposefakeclinicspgh\.com.+}
     ]
   ).run
 end
