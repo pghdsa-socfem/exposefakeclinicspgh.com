@@ -1,8 +1,11 @@
 title: Expose Fake Clinics PGH
 author: Pittsburgh DSA Socialist Feminist Committee
+publisher: Pittsburgh DSA Socialist Feminist Committee
 description: |
-  A project by the Pittsburgh DSA Socialist Feminist Committee
+  A project to expose fake clinics in the Pittsburgh area
 email: socfem@pghdsa.org
+lang: en_US
+logo: assets/img/pghdsa-logo.png
 
 baseurl: ''
 url: 'https://www.exposefakeclinicspgh.com'
