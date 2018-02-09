@@ -2,22 +2,33 @@
   "short_name": "EFCPGH",
   "name": "Expose Fake Clinics PGH",
   "theme_color": "#ED1C24",
+  "background_color": "#FFFFFF",
   "display": "browser",
   "icons": [
     {
-      "src": "assets/img/rose-1x.webp",
-      "type": "image/webp",
+      "src": "assets/img/rose-01x.png",
+      "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "assets/img/rose-2x.webp",
-      "type": "image/webp",
+      "src": "assets/img/rose-02x.png",
+      "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "assets/img/rose-4x.webp",
-      "type": "image/webp",
+      "src": "assets/img/rose-04x.png",
+      "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "assets/img/rose-08x.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "assets/img/rose-16x.png",
+      "type": "image/png",
+      "sizes": "768x768"
     }
   ],
   "start_url": "/?utm_source=homescreen"
