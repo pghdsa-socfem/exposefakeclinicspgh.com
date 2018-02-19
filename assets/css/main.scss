@@ -208,6 +208,14 @@ section#identification, section#pghcpcs {
 section#action {
   border: .25em solid rgba(black, 0.1);
   border-radius: 1em;
+
+  div.para {
+    margin: 1em 0;
+  }
+
+  ul {
+    padding-left: 1em;
+  }
 }
 
 #intro-extended-toggle-container {
