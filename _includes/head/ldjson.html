@@ -1,0 +1,29 @@
+<script type="application/ld+json">
+{% capture socfem %}{
+  "@type": "Organization",
+  "url": "http://pghdsa.org",
+  "logo": "{{ site.url }}/assets/img/pghdsa-logo.png",
+  "name": "{{ site.author }}",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "emergency",
+    "email": "{{ site.email }}",
+    "url": "{{ site.orgurl }}",
+    "areaServed": "{{ site.areaserved }}",
+    "availableLanguage": "{{ site.langhuman }}"
+  }
+}{% endcapture %}
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "{{ site.url }}",
+  "name": "{{ site.title }}",
+  "description": "{{ site.description }}",
+  "headline": "{{ site.title }}",
+  "keywords": "{{ site.keywords | join: ',' }}",
+  "copyrightHolder": {{ socfem }},
+  "copyrightYear": "{{ 'now' | date: '%Y' }}",
+  "author": {{ socfem }},
+  "publisher": {{ socfem }}
+}
+</script>

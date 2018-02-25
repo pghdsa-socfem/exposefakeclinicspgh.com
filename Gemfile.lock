@@ -133,7 +133,6 @@ DEPENDENCIES
   html-proofer
   jekyll
   jekyll-default-layout
-  jekyll-seo-tag
   rake
   rubocop
   type-on-strap!
