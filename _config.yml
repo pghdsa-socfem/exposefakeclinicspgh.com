@@ -4,9 +4,15 @@ publisher: Pittsburgh DSA Socialist Feminist Committee
 description: |
   A project to expose fake clinics in the Pittsburgh area
 email: socfem@pghdsa.org
+orgurl: 'http://pghdsa.org/about-us/committees-structure'
+areaserved: Pittsburgh, Pennsylvania, USA
 lang: en_US
+langhuman: English
 logo: assets/img/pghdsa-logo.png
-
+keywords:
+- abortion
+- reproductive rights
+- healthcare access
 baseurl: ''
 url: 'https://www.exposefakeclinicspgh.com'
 
@@ -42,8 +48,6 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: :compressed
-plugins:
-- jekyll-seo-tag
 exclude:
 - Gemfile
 - Gemfile.lock
