@@ -6,14 +6,14 @@
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
           integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-          crossorigin="anonymous" defer=true></script>
+          crossorigin="anonymous" defer></script>
 
-  <script defer=true src="{{ site.baseurl }}/assets/js/main.js"></script>
-  <script defer=true src="{{ site.baseurl }}/assets/js/navbar.js"></script>
+  <script defer src="{{ site.baseurl }}/assets/js/main.js"></script>
+  <script defer src="{{ site.baseurl }}/assets/js/navbar.js"></script>
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/bootstrap-iso.min.css">
 
-  <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js" defer=true></script>
+  <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js" defer></script>
 
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
@@ -49,8 +49,6 @@
   </script>
   {% endif %}
 
-  {% include head/ldjson.html %}
-
   <script>
     function canUseWebP() {
       var elem = document.createElement('canvas');
@@ -76,4 +74,8 @@
       window.addEventListener('load', init, { once: true });
     })();
   </script>
+
+  {% include head/ldjson.html %}
+
+  <title>{{ site.title }}</title>
 </head>
