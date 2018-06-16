@@ -271,3 +271,15 @@ p.abortion-preamble {
     color: $link-color;
   }
 }
+
+#promo {
+  color: $background-color;
+  background-color: $link-color;
+  text-align: center;
+  border-radius: 1em;
+  padding: 1em 0.25em 0.25em;
+
+  a {
+    color: $background-color;
+  }
+}
