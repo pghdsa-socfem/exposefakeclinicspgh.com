@@ -6,6 +6,14 @@ variable "github_ips" {
   default = ["192.30.252.153", "192.30.252.154"]
 }
 
+terraform {
+  backend "s3" {
+    bucket = "meatballhat-terraform-state"
+    key    = "exposefakeclinicspgh.com/tf/main.tfstate"
+    region = "us-east-1"
+  }
+}
+
 provider "cloudflare" {}
 
 provider "dnsimple" {}
