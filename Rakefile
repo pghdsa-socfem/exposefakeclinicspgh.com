@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 begin
   require 'html-proofer'
   require 'rubocop/rake_task'
