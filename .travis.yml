@@ -1,6 +1,5 @@
 language: ruby
 cache:
   bundler: true
-rvm: 2.5.0
 notifications:
   email: false
