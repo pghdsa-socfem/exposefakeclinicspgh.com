@@ -1,0 +1,28 @@
+name: main
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+jobs:
+  main:
+    name: main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - run: |
+          gem install bundler
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+          bundle exec rake clean
+          bundle exec rake build
+          bundle exec rake htmlproofer

@@ -1,8 +1,8 @@
-_site
-.sass-cache
-.jekyll-metadata
-
-*env
-.terraform
 *.tfplan
 *.tfstate*
+*env
+.jekyll-metadata
+.rake_tasks
+.sass-cache
+.terraform
+_site
