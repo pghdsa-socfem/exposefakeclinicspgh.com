@@ -1,5 +1,0 @@
-language: ruby
-cache:
-  bundler: true
-notifications:
-  email: false
